@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="title">
+                <h1>TIC TAC TOE</h1>
+            </div>
+        </nav>
+    </header>
+    <div id="character-1"></div>
+    <div id="character-2"></div>
+
+    <div class="start">
+        <button>Iniciar</button>
+    </div>
+    <div class="character-choice ">
+        <button class="charac1-1 hide "><img src="images/head1m.png" alt=""></button>
+        <button class="charac2-1 hide"><img src="images/head2m.png" alt=""></button>
+        <button class="charac3-1 hide"><img src="images/head3m.png" alt=""></button>
+        <button class="charac4-1 hide"><img src="images/head1f.png" alt=""></button>
+        <button class="charac5-1 hide"><img src="images/head2f.png" alt=""></button>
+        <button class="charac6-1 hide"><img src="images/head3f.png" alt=""></button>
+        <button class="charac1-2 hide"><img src="images/head1m.png" alt=""></button>
+        <button class="charac2-2 hide"><img src="images/head2m.png" alt=""></button>
+        <button class="charac3-2 hide"><img src="images/head3m.png" alt=""></button>
+        <button class="charac4-2 hide"><img src="images/head1f.png" alt=""></button>
+        <button class="charac5-2 hide"><img src="images/head2f.png" alt=""></button>
+        <button class="charac6-2 hide"><img src="images/head3f.png" alt=""></button>
+    </div>
+    <div class="choice">
+        <button class="choice1 hide">X</button>
+        <button class="choice2 hide">O</button>
+    </div>
+
+    <div class="button-container">
+        <button class="pvp hide">PVP</button>
+        <button class="pvm hide">PVM</button>
+    </div>
+
+    <div class="game-container hide">
+        <div class="game-mode-container">
+            <button class="game-mode easy active-mode">Facil</button>
+            <button class="game-mode medium">Medio</button>
+            <button class="game-mode hard">Dificil</button>
+        </div>
+        
+        <div class="game-box" id="box-1"></div>
+        <div class="game-box" id="box-2"></div>
+        <div class="game-box" id="box-3"></div>
+        <div class="game-box" id="box-4"></div>
+        <div class="game-box" id="box-5"></div>
+        <div class="game-box" id="box-6"></div>
+        <div class="game-box" id="box-7"></div>
+        <div class="game-box" id="box-8"></div>
+        <div class="game-box" id="box-9"></div>
+        <button class="reset">Main Menu</button>
+        <div class="scoreboard-container">
+            <span class="score-box">
+                <h2>Placar</h2>
+                <span class="x-scoreboard">Player1:</span>
+                <span class="scoreboard-1">0</span>
+            </span>
+            <span class="score-box">
+                <span class="o-scoreboard">Player2:</span>
+                <span class="scoreboard-2">0</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="hide">
+        <div class="x"><div class="xone">x</div></div>
+        <div class="o"><div class="xtwo">x</div></div>
+    </div>
+    
+    <div id="message" class="hide" >
+        <p>teste</p>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

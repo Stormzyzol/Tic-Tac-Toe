@@ -1,0 +1,40 @@
+function computerplay(){
+
+    let cloneO = o.cloneNode(true)
+        count1 = counting()
+    console.log("count1",count1)
+   defenseAttack(cloneO, attackTactics)
+    count2 = counting()
+    console.log("count2",count1)
+    console.log(count1==count2)
+    if (count2==count1){
+        defenseAttack(cloneO, defenseTactics)
+        count3=counting()
+        console.log(count3==count2, "count32")
+        if (count3==count2){
+            random(cloneO)
+        }
+        
+        
+    }   }
+    
+    function random(cloneO){
+            randomnumb= Math.floor(Math.random()*9)
+            if (boxes[randomnumb].childNodes[0]==undefined){
+                boxes[randomnumb].appendChild(cloneO)
+            }  else{
+                let count = 0
+                for(let i = 0; i <boxes.length;i++){
+                    if (boxes[i].childNodes[0]!=undefined){
+                        count++
+                    }
+                }
+                if (count < 9){
+                    random(cloneO)
+                }
+                
+            }
+            
+
+        
+    }

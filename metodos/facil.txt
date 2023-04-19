@@ -1,0 +1,25 @@
+function computerplay(){
+
+    let cloneO = o.cloneNode(true)
+    random(cloneO)   }
+    
+    function random(cloneO){
+            randomnumb= Math.floor(Math.random()*9)
+            if (boxes[randomnumb].childNodes[0]==undefined){
+                boxes[randomnumb].appendChild(cloneO)
+            }  else{
+                let count = 0
+                for(let i = 0; i <boxes.length;i++){
+                    if (boxes[i].childNodes[0]!=undefined){
+                        count++
+                    }
+                }
+                if (count < 9){
+                    random(cloneO)
+                }
+                
+            }
+            
+
+        
+    }

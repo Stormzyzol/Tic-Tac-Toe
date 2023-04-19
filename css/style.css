@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300&family=Press+Start+2P&display=swap');
+
+:root {
+    --primary: #7c6deb;
+    --secondary: #e479c4;
+    --third: #af68d3;
+    --fourth: #769ef3;
+    --fith: #9123eb;
+    --sixth: #8daccf;
+    --seventh: #d1b5cc;
+    --eigth: #ceb1b6;
+    --ninth: #abb9cf;
+    --light: #eeeeee;
+    --dark: #000000;
+    --banana: #dec20b;
+    --grey: #746f6f;
+}
+
+*{
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 92.8vh;
+    width: 98vw;
+}
+
+
+.title{
+    order: 2;
+    margin-bottom: 50px;
+    color: var(--light);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 2em;
+    text-align: center;
+    text-shadow: 3px 1px 1px var(--fourth), 2px 2px 1px var(--seventh), 4px 2px 1px var(--fourth),
+        3px 3px 1px var(--seventh), 5px 3px 1px var(--fourth), 4px 4px 1px var(--seventh),
+        6px 4px 1px var(--fourth), 5px 5px 1px var(--seventh), 7px 5px 1px var(--fourth),
+        6px 6px 1px var(--seventh), 8px 6px 1px var(--fourth), 7px 7px 1px var(--seventh),
+        9px 7px 1px var(--fourth);
+
+        
+}
+
+.entitlemnet{
+    order: 2;
+    margin-bottom: 50px;
+    color: var(--light);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 2em;
+    text-align: center;
+    text-shadow: 3px 1px 1px var(--fourth), 2px 2px 1px var(--seventh), 4px 2px 1px var(--fourth),
+        3px 3px 1px var(--seventh), 5px 3px 1px var(--fourth), 4px 4px 1px var(--seventh),
+        6px 4px 1px var(--fourth), 5px 5px 1px var(--seventh), 7px 5px 1px var(--fourth),
+        6px 6px 1px var(--seventh), 8px 6px 1px var(--fourth), 7px 7px 1px var(--seventh),
+        9px 7px 1px var(--fourth);
+}
+
+.start button, .charac1-1, .charac2-1, .charac3-1, .charac4-1, .charac5-1, .charac6-1, .charac1-2, .charac2-2, .charac3-2, .charac4-2, .charac5-2, .charac6-2,.choice1,.choice2,.pvp,.pvm,.reset{
+    border: none;
+    outline: none;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: var(--light);
+    background-color:var(--primary);
+    padding: 10px;
+    box-shadow: 5px 5px 0px 0px var(--dark);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    
+}
+
+.start button, .choice1,.choice2{
+    padding:20px;
+    margin-top:100px;
+}
+
+.start button:hover, .charac1-1:hover, .charac2-1:hover, .charac3-1:hover, .charac4-1:hover, .charac5-1:hover, .charac6-1:hover, .charac1-2:hover, .charac2-2:hover, .charac3-2:hover, .charac4-2:hover, .charac5-2:hover, .charac6-2:hover,.choice1:hover,.choice2:hover,.pvp:hover,.pvm:hover,.reset:hover{
+    background-color: var(--fourth);
+    box-shadow: 3px 3px 0px 0px var(--dark);
+    
+}
+
+.start button:hover{
+    margin-top: 102px;
+}
+
+.reset{
+    left: 25%;
+    margin-top: 10px;
+}
+
+.game-mode-container{
+    margin-left: 6px;
+}
+
+.game-mode{
+    
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    box-shadow: 5px 5px 0px 0px var(--dark);
+    color: var(--light);
+    background-color:var(--primary);
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+.game-mode:hover{
+    background-color: var(--fourth);
+    box-shadow: 3px 3px 0px 0px var(--dark);
+}
+
+.active-mode{
+    background-color: var(--fourth);
+    box-shadow: 3px 3px 0px 0px var(--dark);
+}
+
+
+
+.button-container button{
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+
+}
+
+.game-container{
+    display: flex;
+    width: 300px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box-1,#box-2,#box-3{
+    border-top: none;
+}
+
+#box-1,#box-4,#box-7{
+    border-left: none;
+}
+
+#box-9,#box-6,#box-3{
+    border-right: none;
+}
+
+#box-7,#box-8,#box-9{
+    border-bottom: none;
+}
+
+.game-box{
+    height: 100px;
+    border: 5px solid var(--dark);
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+
+#choice_x,#choice_o{
+    font-size: 65px;
+    display: inline-block;
+    line-height: 100px;
+}
+
+#choice_x{
+    color: var(--fith);
+}
+
+#choice_o{
+    color: var(--third);
+}
+
+
+
+
+
+
+.scoreboard-container{
+    font-weight: bold;
+
+    font-size: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.x-scoreboard{
+    color: var(--dark);
+    font-size: 1em;
+}
+
+.o-scoreboard{
+    color: var(--dark);
+    
+}
+
+#message p{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 150px;
+    width: 500px;
+    font-size: 50px;
+    background-color: #000000;
+    color: #fff;
+   
+}
+
+.hide{
+    display: none;
+}
+
+#character-1, #character-2{
+    position: absolute;
+    bottom: 20%;
+    
+}
+
+#character-1{
+    left: 10%;
+    transform: scale(2);
+}
+
+#character-2{
+    right: 10%;
+    transform: scale(-2,2);
+    
+}
