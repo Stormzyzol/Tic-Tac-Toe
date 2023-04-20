@@ -851,7 +851,7 @@ function defenseadv(cloneO){
         boxes[4].appendChild(cloneO)
     }
     else if(( state[10].includes(undefined)==false ) && boxes3==undefined){
-        boxes[2].appendChild(cloneO)
+        boxes[6].appendChild(cloneO)
     }
     else if(( state[9].includes(undefined)==false ) && boxes1==undefined){
         boxes[0].appendChild(cloneO)
