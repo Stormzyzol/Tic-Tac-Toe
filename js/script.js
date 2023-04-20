@@ -796,6 +796,10 @@ function restplay(cloneO){
         
        
     }
+    else{
+        rest = [1,3,5,7]
+        diagonalappend(cloneO, rest)
+    }
     
 
     
